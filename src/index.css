@@ -5,9 +5,67 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: beige;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.heading{
+  text-transform: uppercase;
+  color:burlywood;
+  padding: 0px 30px;
+  text-align: center;
+  font-size: 50px;
+  background-color: antiquewhite;
+  margin: 0px 0px 20px 0px;
+}
+.Cards{
+  width: 300px;
+  height: 50vh;
+  display:inline-flex;
+  padding: 20px 50px ;
+  background-color: beige;
+
+}
+.card{
+  height: 49vh;
+  color:chocolate;
+  border: 10px solid;
+  border-radius: 10px;
+  text-align: left;
+}
+.image{
+  color: aliceblue;
+  margin: 0px;
+  padding: auto;
+  border: 2px black solid;
+  border-radius: 2px;
+  
+}
+.card_information{
+  margin: 0%;
+  padding: 0;
+  display:grid;
+  font-weight: bold;
+}
+.titles{
+  font-size:larger;
+}
+.snames{
+  font-size:larger;
+  color:brown;
+  font-weight: 800;
+}
+.button{
+  border: 2px solid;
+  size: 80ch;
+  font-size: large;
+  font-weight: 700;
+  color: crimson;
+  background-color: yellow;
+  cursor: pointer; 
 }

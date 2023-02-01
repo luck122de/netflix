@@ -1,17 +1,51 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom';
+import Cards from "./Cards";
+import Data from "./Data";
+import "./index.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+
+ReactDOM.render(<>
+<h1 className="heading">5 best netflix series</h1>
+{Data.map((val)=>{
+    return(
+        <Cards 
+                         img={val.image}
+                         title={val.title}
+                         sname={val.sname} 
+                         link={val.link}
+/>)
+})}</>,document.getElementById('root'));
+
+
+/*
+
+{/* <Cards 
+                         img={Data[0].image}
+                         title={Data[0].title}
+                         sname={Data[0].sname} 
+                         link={Data[0].link}
+/>
+ <Cards 
+           img= {Data[0].image}
+           title={Data[0].title} 
+           sname={Data[0].sname} 
+           link={Data[0].link}
+/>
+<Cards 
+img={Data[0].image}
+ title={Data[0].title} 
+ sname={Data[0].sname}
+ />
+ <Cards 
+img={Data[0].image}
+ title={Data[0].title} 
+ sname={Data[0].sname}
+ />
+ <Cards 
+img={Data[0].image}
+ title={Data[0].title} 
+ sname={Data[0].sname}
+ /> */
